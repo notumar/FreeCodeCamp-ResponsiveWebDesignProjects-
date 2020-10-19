@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="left-navbar">
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+        <ul class="right-navbar">
+            <li>Profile</li>
+            <li>Sign In</li>
+        </ul>
+    </div>
+    <h1 id="title">FRIENDSHIP FORM</h1>
+    <p id="description">
+        A simple form to help you find friends!
+    </p>
+    <form id="survey-form" action="./form-results.html" method="GET" enctype="multipart/form-data">
+
+        <label for="name" id="name-label">
+            Name:
+            <input class="biodata" type="text" name="Name" id="name" placeholder="Enter your name" required>
+        </label>
+        <div id="error"></div>
+        <br> <br>
+        <label for="email" id="email-label">
+            Email:
+            <input class="biodata" type="email" name="Email" id="email" placeholder="Enter your email" required>
+        </label><br> <br>
+        <label>
+            DOB:
+            <input class="biodata" type="date" name="DOB" id="dob" min="2002-01-01" required>
+        </label><br> <br>
+        <label id="number-label">
+            Phone:
+            <input class="biodata" type="number" name="Phone-Number" id="number" placeholder="(optional)" min="1"
+                max="999999999" minlength="6">
+        </label><br> <br>
+        <label>
+            Bio:
+            <textarea name="Bio" id="bio" placeholder="Your bio here(optional)"></textarea>
+        </label><br> <br>
+        <label>
+            Website:
+            <input class="biodata" type="url" name="Website" id="website" placeholder="Your Website(optional)">
+        </label><br> <br>
+        <label>
+            Gender:
+
+            <input type="radio" name="Gender" id="male" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" name="Gender" id="female" value="Female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" name="Gender" id="unknown" value="Prefer not to say" required>
+            <label for="unknown">Prefer not to say</label>
+        </label><br>
+        <label id="likes">
+            Likes:
+
+            <input type="checkbox" name="Human" id="human" value="Human" checked>
+            <label for="funny">Human</label>
+
+            <input type="checkbox" name="Funny" id="funny" value="Funny">
+            <label for="funny">Funny</label>
+
+            <input type="checkbox" name="Smart" id="smart" value="Smart">
+            <label for="funny">Smart</label>
+
+            <input type="checkbox" name="Kind" id="kind" value="Kind">
+            <label for="funny">Kind</label>
+
+        </label><br> <br>
+
+        <label>
+            Dislikes:
+            <select name="Dislikes" id="dropdown">
+                <option value="Lying">Lying</option>
+                <option value="Cheating">Cheating</option>
+                <option value="Stealing">Stealing</option>
+            </select>
+        </label><br> <br>
+
+        <label for="picture">Upload Image(optional):
+            <input type="file" name="Picture" id="picture">
+        </label>
+
+        <br><br>
+        <button id="submit" type="submit">Submit</button>
+        <br>
+        <button type="reset">Reset</button>
+
+
+
+
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
