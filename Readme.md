@@ -7,3 +7,15 @@
   
 A tribute page to the best defender in the [Barclays Premier League](https://premierleague.com). 
 
+<br>
+<br>
+
+## 2. BUILD A SURVEY FORM: [FRIENDSHIP FORM](./Friendship%20Form/)
+
+### Stack:
+- HTML
+- CSS
+- JavaScript
+  
+A retro html form that collects your details and displays them! No backend 😔
+
