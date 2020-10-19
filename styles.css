@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+#main {
+  display: grid;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  display: flex;
+  justify-content: center;
+  background-color: #c70101;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  line-height: 2em;
+  font-size: large;
+  height: auto;
+  border-radius: 10px;
+}
+
+#tribute-info {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#image-div {
+  width: 80%;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+  height: auto;
+  border-radius: 15px;
+  display: grid;
+  margin: 20px;
+  color: black;
+  justify-content: center;
+  justify-self: center;
+  padding: 2em;
+}
+small {
+  justify-self: center;
+}
+#footer {
+  display: flex;
+  background: black;
+  color: white;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 1em;
+}
+
+.navbar li {
+  color: white;
+  list-style: none;
+}
+input {
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  padding: 0.4em;
+}
+
+@media (max-width: 800px) {
+  .navigate {
+    display: none;
+  }
+  input {
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    font-size: 10px;
+    padding: 0px;
+    justify-items: space-between;
+    align-items: center;
+  }
+  ul {
+    justify-content: space-between;
+  }
+}
