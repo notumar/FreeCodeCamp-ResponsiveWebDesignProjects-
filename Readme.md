@@ -1,5 +1,5 @@
-# [FREECODECAMP](https://learn.freecodecamp.org) RESPONSIVE PROJECT 1
-## LINDELOF TRIBUTE
+# [FREECODECAMP](https://learn.freecodecamp.org) RESPONSIVE WEB DESIGN CERTIFICATION PROJECTS
+## 1. BUILD A TRIBUTE PAGE: [LINDELOF TRIBUTE](./Lindelof%20Tribute)
 
 ### Stack:
 - HTML
