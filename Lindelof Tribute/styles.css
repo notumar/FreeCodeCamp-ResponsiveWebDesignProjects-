@@ -42,7 +42,7 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#image-div {
+#img-div {
   width: 80%;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
   height: auto;
@@ -54,7 +54,7 @@ p {
   justify-self: center;
   padding: 2em;
 }
-small {
+figcaption {
   justify-self: center;
 }
 #footer {
