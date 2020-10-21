@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-rows: auto repeat(5, 1fr);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-height: 50px;
+}
+h1,
+h2 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+header {
+  max-height: fit-content;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 4px 2px -2px gray;
+  padding: 10px;
+  background: lightgreen;
+  position: fixed;
+  top: 0;
+}
+
+.card-services {
+  display: flex;
+  height: auto;
+}
+
+.side-nav {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  width: 15%;
+  justify-content: space-around;
+}
+
+.side-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+div {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.images {
+  display: flex;
+  width: 30%;
+  height: auto;
+  justify-content: space-between;
+}
+
+.card-service {
+  background: wheat;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#welcome {
+  background: #80b9c8;
+}
+#intro {
+  background: #b2d9c4;
+}
+#services {
+  background: #43916e;
+}
+
+#video {
+  justify-self: center;
+  width: 50%;
+  padding-bottom: 40px;
+  height: auto;
+}
+.video {
+  background: #4ca2d7;
+}
+
+.contact {
+  background: #f1e0c5;
+}
+
+p {
+  margin: 0 80px 0 80px;
+}
+
+footer {
+  justify-self: center;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 20%;
+}
+
+input {
+  width: 100%;
+  padding: 1em;
+  outline: none;
+}
+footer {
+  width: 100%;
+  background: peachpuff;
+  justify-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-height: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
