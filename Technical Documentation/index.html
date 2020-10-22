@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1><a href="#Home">TRANI DOCUMENTATION</a></h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Home">Home</a> </li>
+            <li><a class="nav-link" href="#Introduction">Introduction</a> </li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a> </li>
+            <li><a class="nav-link" href="#Accessing_Users">Accessing Users</a> </li>
+            <li><a class="nav-link" href="#General_Info">General Info</a> </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Home" class="main-section">
+            <header>
+                <h2>Home</h2>
+            </header>
+            <p>
+                Need to make bulk transfers easily and quickly?
+            </p>
+            <p>
+                Use Trani!
+            </p>
+        </section>
+        <section id="Introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>
+                Trani was created as a platform to make online bulk transactions easier. It is powered by the <a
+                    href="http://paystack.com" target="_blank" rel="noopener noreferrer">Paystack</a> API and was one of
+                the
+                first Full-Stack projects I did.
+            </p>
+            <p>The aims of this document are:
+            <ul>
+                <li>A Quick Guide to starting with Trani</li>
+                <li>A General Overview</li>
+            </ul>
+            I hope I can provide a simple and clear guide for all to follow.
+            </p>
+        </section>
+        <section id="Getting_Started" class="main-section">
+            <header>
+                <h2>Getting Started</h2>
+            </header>
+            <p>
+                A brief explanation of the project, it is a Vue powered front end for the Paystack API. It allows you to
+                perform the following operations:
+            <ul>
+                <li>Display a person's name from account</li>
+                <li>Transfer money in bulk to recipients</li>
+                <li>Save a recipient for a recurring payment</li>
+            </ul>
+            Quite simple no?
+            </p>
+            <p>
+                To perform a payment:
+            <ul class="steps">
+                <li>Step 1: Fill in the information</li>
+                <li>Hit the pay button</li>
+                <li>The recipient details will be saved for future payments</li>
+            </ul>
+            </p>
+        </section>
+        <section id="Accessing_Users" class="main-section">
+            <header>
+                <h2>Accessing Users</h2>
+            </header>
+            <p>
+                User data won't be persisted to a database, instead an API call will retrieve the list of users
+                everytime the app is loaded
+                This way data is more secure and less prone to security risks. All we provide is a simple frontend
+            </p>
+            <p>
+                Some of the API calls include:
+            </p>
+            <p>
+            <h3>
+                Create a new recipient
+            </h3>
+            <code>curl https://api.paystack.co/transferrecipient
+                    -H "Authorization: Bearer YOUR_SECRET_KEY"
+                    -H "Content-Type: application/json"
+                    -d '{ "type": "nuban",
+                          "name": "Zombie",
+                          "description": "Zombier",
+                          "account_number": "01000000010",
+                          "bank_code": "044",
+                          "currency": "NGN"
+                        }'
+                    -X POST</code>
+            </p>
+            <p>
+            <h3>List all recipients</h3>
+            <code>curl https://api.paystack.co/transferrecipient
+                    -H "Authorization: Bearer YOUR_SECRET_KEY"
+                    -X GET</code>
+            </p>
+
+            <p>
+            <h3>List a Recipient</h3>
+            <code>curl https://api.paystack.co/transferrecipient/:id_or_code
+                    -H "Authorization: Bearer YOUR_SECRET_KEY"
+                    -X GET</code>
+            </p>
+
+            <p>
+            <h3>Update Recipient details</h3>
+            <code>curl https://api.paystack.co/transferrecipient/:id_or_code-H "Authorization: Bearer YOUR_SECRET_KEY"-H "Content-Type: application/json"-d '{ name: "Rick Sanchez" }'-X PUT</code>
+            </p>
+            <p>
+            <h3>Delete Recipient</h3>
+            <code>curl https://api.paystack.co/transferrecipient/:id_or_code
+                    -H "Authorization: Bearer YOUR_SECRET_KEY"
+                    -X DELETE</code>
+            </p>
+
+
+
+        </section>
+        <section id="General_Info" class="main-section">
+            <header>
+                <h2>General Info</h2>
+            </header>
+            <p>
+                This codebase is available on <a href="https://github.com/Nukeace/Trani" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>. Also for more
+                details on the API used, visit <a href="http://paystack.com" target="_blank"
+                    rel="noopener noreferrer">Paystack</a>
+            </p>
+
+
+
+    </main>
+    <footer>
+        Powered by Paystack
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
